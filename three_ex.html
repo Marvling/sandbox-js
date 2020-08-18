@@ -2,14 +2,21 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- FOR MOBILE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThreeJS</title>
     <link rel="stylesheet" href="main.css">
+
+    <!-- LOAD SCRIPTS -->
+
+    <script src="./js/three.js"></script>
+    <!-- <script src="./js/OrbitControls.js"></script> -->
+
 </head>
 
 <body>
-    <script src="./js/three.js"></script>
+
     <script>
 
         // SETUP
@@ -31,6 +38,7 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
 
         document.body.appendChild(renderer.domElement);
+
 
         // GEOMETRY
 
@@ -62,6 +70,13 @@
             requestAnimationFrame(animate);
             mesh.rotation.x += 0.01;
             mesh.rotation.y += 0.01;
+            if (mesh.position.x < 5) {
+                mesh.position.x += 0.01;
+
+            }
+            else {
+                mesh.position.set(0, 0, 0);
+            }
             renderer.render(scene, camera);
         }
         animate();
