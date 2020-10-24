@@ -1,6 +1,6 @@
 cameras:
     camera1:
-        type: perspective
+        type: isometric
 
 lights:
     light1:
