@@ -1,12 +1,9 @@
-//Free Code Camp Youtube
-//https://www.youtube.com/watch?v=DLX62G4lc44
-
 import React from 'react'
 
 import ContactCard from './components/ContactCard'
 
 
-function MyApp() {
+function AppContactCard() {
     return(
         <div>
             <ContactCard 
@@ -19,5 +16,4 @@ function MyApp() {
     )
 }
 
-
-export default MyApp
+export default AppContactCard

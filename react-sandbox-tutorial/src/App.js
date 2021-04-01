@@ -1,13 +1,24 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>HELLO CANIM!</h1>
-      </div>
+import Joke from './components/Joke'
+
+
+function App() {
+    return(
+        <div>
+            <Joke 
+            question = 'kim o?'
+            punchline = 'öcü'
+            />
+            <Joke 
+            punchline = 'Kazana düşmüş'
+            />
+            <Joke
+            question = 'Adam neden sınıfta kalmış'
+            punchline = 'Adamin biri varmış'
+            />
+        </div>
     )
-  }
 }
 
 export default App
