@@ -16,6 +16,7 @@ function MyInfo() {
         <li>loy</li>
     </ul>
     </div>   
-)}
+    )
+}
 
 export default MyInfo

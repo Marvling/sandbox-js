@@ -3,36 +3,21 @@
 
 import React from 'react'
 
-
-import Header from './components/Header'
-import MyInfo from './components/MyInfo'
-import Footer from './components/Footer'
+import ContactCard from './components/ContactCard'
 
 
 function MyApp() {
     return(
         <div>
-        <Header />
-        <MyInfo />
-        <Footer />
+            <ContactCard 
+            contact={{name:'kenan', phone:'3-5', mail:'meyil', imgUrl:'https://dummyimage.com/200x200/ba97ba/dafac8.png'}}
+            />
+            <ContactCard 
+            contact={{name:'Mahmut', phone:'8 olur 9 olur', mail:'evet', imgUrl:'https://dummyimage.com/200x200/ba97ba/dafac8.png'}}
+            />
         </div>
     )
 }
 
-
-/*
-function MyApp() {
-    return(
-    <div>
-        <input type="checkbox" id="horns" name="horns" />
-        <label for="horns">Horns</label>
-        <input type="checkbox" id="Borns" name="Borns" />
-        <label for="Borns">Borns</label>
-        <input type="checkbox" id="Corns" name="Corns" />
-        <label for="Corns">Corns</label>
-    </div>
-   )
-}
-*/
 
 export default MyApp
