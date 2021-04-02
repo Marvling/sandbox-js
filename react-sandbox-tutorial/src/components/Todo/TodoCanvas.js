@@ -2,13 +2,20 @@ import React from 'react'
 import TodoItem from './TodoItem'
 import todoData from './todoData'
 
-const todoComponents = todoData.map(todoComponent => <TodoItem /> )
+// function mapper (item) {
+//     return(
+//         <TodoItem todoItem={item}/>
+//     )
+// }
+// const todoComponents = todoData.map(mapper)
+
+const todoComponents = todoData.map(item => <TodoItem key = {item.id} todoItem={item}/>)
+console.log(todoComponents[0]);
 
 function TodoCanvas(){
     return(
-    <div>
+    <div style={{backgroundColor:'#777'}}>
         {todoComponents}
-
     </div>
     )
 }

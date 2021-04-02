@@ -7,17 +7,17 @@ const todoData= [
     {
         id:2,
         text:'emrin?',
-        completed: false
+        completed: true
     },
     {
         id:3,
         text:'oduncu',
-        completed: false
+        completed: true
     },
     {
         id:4,
         text:'tamam',
-        completed: false
+        completed: true
     },
     {
         id:5,
