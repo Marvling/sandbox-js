@@ -1,22 +1,12 @@
 import React from 'react'
 
-import Joke from './components/Joke'
+import TodoCanvas from './components/Todo/TodoCanvas'
 
 
 function App() {
     return(
         <div>
-            <Joke 
-            question = 'kim o?'
-            punchline = 'öcü'
-            />
-            <Joke 
-            punchline = 'Kazana düşmüş'
-            />
-            <Joke
-            question = 'Adam neden sınıfta kalmış'
-            punchline = 'Adamin biri varmış'
-            />
+            <TodoCanvas />
         </div>
     )
 }
