@@ -1,14 +1,18 @@
 import React from 'react'
 
-import TodoCanvas from './components/Todo/TodoCanvas'
 
 
-function App() {
-    return(
-        <div>
-            <TodoCanvas />
-        </div>
-    )
+class App extends React.Component{
+    render (){
+
+        return(
+            
+            <div>
+                <h3>At == Murat</h3>
+                <h2>true</h2>
+            </div>
+        )
+    }
 }
 
 export default App

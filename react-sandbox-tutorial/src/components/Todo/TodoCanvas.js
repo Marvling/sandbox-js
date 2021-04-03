@@ -2,22 +2,31 @@ import React from 'react'
 import TodoItem from './TodoItem'
 import todoData from './todoData'
 
-// function mapper (item) {
+// const todoComponents = todoData.map(item => <TodoItem key = {item.id} todoItem={item}/>)
+// console.log(todoComponents[0]);
+
+// function TodoCanvas(){
 //     return(
-//         <TodoItem todoItem={item}/>
+//     <div style={{backgroundColor:'#777'}}>
+//         {todoComponents}
+//     </div>
 //     )
 // }
-// const todoComponents = todoData.map(mapper)
 
-const todoComponents = todoData.map(item => <TodoItem key = {item.id} todoItem={item}/>)
-console.log(todoComponents[0]);
+class TodoCanvas extends React.Component{
 
-function TodoCanvas(){
-    return(
-    <div style={{backgroundColor:'#777'}}>
-        {todoComponents}
-    </div>
-    )
+    todoComponents = todoData.map(item => <TodoItem key = {item.id} todoItem={item}/>)
+
+    render (){
+
+        return(
+
+            <div style={{backgroundColor:'#777'}}>
+                {this.todoComponents}
+            </div>
+            
+        )
+    }
 }
 
 export default TodoCanvas
