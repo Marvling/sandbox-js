@@ -18,7 +18,7 @@ class TodoCanvas extends React.Component{
     todoComponents = todoData.map(item => <TodoItem key = {item.id} todoItem={item}/>)
 
     render (){
-
+        
         return(
 
             <div style={{backgroundColor:'#777'}}>
