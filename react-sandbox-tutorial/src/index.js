@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
-import App from './App';
+import AppTodo from './AppTodo';
 
 
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<AppTodo />, document.getElementById('root'))

@@ -7,7 +7,7 @@ class App extends React.Component{
     constructor(){
         super()
         this.state = {
-            text: 'bu da bir state'
+            text: 'bu bir state'
         }
     }
 
@@ -15,8 +15,9 @@ class App extends React.Component{
 
         return(
             <div>
-                <Basic kemal="bu bir prop ama children prop değil" text={this.state.text} />
-                <h2>Bunda var mı?</h2>
+                <h2>Bu ne nedir?</h2>
+                <h3>{this.state.text}</h3>
+                <Basic kemal={this.state.text}/>
             </div>
         )
     }

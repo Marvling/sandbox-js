@@ -2,16 +2,7 @@ import React from 'react'
 
 import TodoCanvas from './components/Todo/TodoCanvas'
 
-
-// function App() {
-//     return(
-//         <div>
-//             <TodoCanvas />
-//         </div>
-//     )
-// }
-
-class App extends React.Component{
+class AppTodo extends React.Component{
     render (){
         
         return(
@@ -23,4 +14,4 @@ class App extends React.Component{
     }
 }
 
-export default App
+export default AppTodo
